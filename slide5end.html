@@ -35,8 +35,16 @@
 
 <style>
 	.container {
+		display: grid;
+		grid-gap: 20px;
+		border: 10px solid var(--yellow);
+		grid-template-columns: repeat(auto-fill, 150px); 
+		grid-template-columns: repeat(auto-fit, 150px); 
+		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 	}
 	.item4 {
+		grid-column-end: -1; 
 	}
 </style>
 

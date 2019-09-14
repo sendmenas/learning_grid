@@ -16,12 +16,21 @@
 
 <style>
 		.container {
+			display: grid;
+			grid-gap: 20px;
+			grid-template-columns: repeat(10, 1fr);
 		}
 		.item1 {
+			grid-column: span 8;
+			order: 2;
 		}
 		.item2 {
+			grid-column: span 2;
+			order: 1;
 		}
 		.item3 {
+			grid-column: 1 / -1;
+			order: 3;
 		}
 	</style>
 </html>
