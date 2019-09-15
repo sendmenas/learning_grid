@@ -12,7 +12,8 @@
 </body>
 <div class="container">
 	<div class="item item1">Sidebar 1</div>
-	<div class="item item2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper massa et turpis vulputate accumsan.</div>
+	<div class="item item2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper massa et turpis
+		vulputate accumsan.</div>
 	<div class="item item3">Sidebar 2</div>
 	<div class="item item4">Footer</div>
 </div>
@@ -23,22 +24,37 @@
 		margin: 0;
 		padding: 50px;
 	}
+	/*
+		- Make container grid with 20px gap;
+		- Make three columns, second one of 500px and the rest occupy free space equaly;
+		- Make three rows, bottom one of 100px and the rest occupy free space equaly;
+		- Create grid area of sidebar1 on the left, sidebar2 on the right, main in the middle and footer in the bottom.
+		- Put item1 in sidebar1 area;
+		- Put item2 in main area;
+		- Put item3 in sidebar2 area;
+		- Put item4 in footer area;
+		- Make main are to occupy top, sidebar1 two columns and sidebar2 one column in the middle when media query apply.
+	*/
 	.container {
+		height: 100%;
 	}
+
 	.item1 {
 	}
+
 	.item2 {
 	}
+
 	.item3 {
 	}
+
 	.item4 {
 	}
-	.item1 {
-	}
-	 @media (max-width: 1000px) {
+
+	@media (max-width: 1000px) {
 		.container {
 		}
-	} 
+	}
 </style>
 
 </html>

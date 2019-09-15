@@ -10,32 +10,56 @@
 
 <body>
 </body>
-<div class="container">
+<div class="container container--1">
 	<div class="item item1">item 1</div>
 	<div class="item item2">item 2</div>
 	<div class="item item3">item 3</div>
 	<div class="item item4">item 4</div>
-	<div class="item item5">item 5</div>
-	<div class="item item6">item 6</div>
-	<div class="item item7">item 7</div>
-	<div class="item item8">item 8</div>
-	<div class="item item9">item 9</div>
-	<div class="item item10">item 10</div>
-	<div class="item item11">item 11</div>
-	<div class="item item12">item 12</div>
-	<div class="item item13">item 13</div>
-	<div class="item item14">item 14</div>
-	<div class="item item15">item 15</div>
-	<div class="item item16">item 16</div>
-	<div class="item item17">item 17</div>
-	<div class="item item18">item 18</div>
-	<div class="item item19">item 19</div>
-	<div class="item item20">item 20</div>
 </div>
-
+<div class="container container--2">
+	<div class="item item1">item 1</div>
+	<div class="item item2">item 2</div>
+	<div class="item item3">item 3</div>
+	<div class="item item4">item 4</div>
+</div>
+<div class="container container--3">
+	<div class="item item1">item 1</div>
+	<div class="item item2">item 2</div>
+	<div class="item item3">item 3</div>
+	<div class="item item4">item 4</div>
+</div>
+<div class="container container--4">
+	<div class="item item1">item 1</div>
+	<div class="item item2">item 2</div>
+	<div class="item item3">item 3</div>
+	<div class="item item4">item 4</div>
+</div>
 <style>
+	/*
+		- Make container grid with 20px gap;
+		- Make container 1 to auto fill the grid with 150px columns;
+		- Make container 2 to auto fit the grid with 150px columns;
+		- Make container 3 to auto fill the grid with columns of minimum width of 150px ad maximum to occupy all free space;
+		- Make container 4 to auto fit the grid with columns of minimum width of 150px ad maximum to occupy all free space;
+		- Place item4 in the last column of the grid.
+	*/
 	.container {
+		border: 10px solid var(--yellow);
+		margin-bottom: 30px;
 	}
+
+	.container--1 {
+	}
+
+	.container--2 {
+	}
+
+	.container--3 {
+	}
+
+	.container--4 {
+	}
+
 	.item4 {
 	}
 </style>
