@@ -34,6 +34,7 @@
 		- Make container 1 to have 3 columns with equal length;
 		- Make container 2 to have 3 columns with length calculated automaticaly by the content;
 		- Make container 3 to have first column calculated automaticaly and two columns share the rest of the witdth;
+		- Make container 4 to have ten columns where every second one would by twice as big as a previous one;
 	*/
 
 	.container {
@@ -47,6 +48,10 @@
 	}
 
 	.container--3 {
+	}
+
+	.container--4 {
+		grid-template-columns: repeat(5, 1fr 2fr);
 	}
 </style>
 
