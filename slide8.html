@@ -1,32 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css.css">
 	<title>CSS Grid</title>
 </head>
+
 <body>
 </body>
-	<div class="container">
-		<div class="itm itm1">1</div>
-		<div class="itm itm2">2</div>
-		<div class="itm itm3">3</div>
-		<div class="itm itm4">4</div>
-		<div class="itm itm5">5</div>
-		<div class="itm itm6">6</div>
-		<div class="itm itm7">7</div>
-		<div class="itm itm8">8</div>
-		<div class="itm itm9">9</div>
-		<div class="itm itm10">10</div>
-	</div>
+<div class="container container--1">
+	<div class="itm itm1">1</div>
+	<div class="itm itm2">2</div>
+	<div class="itm itm3">3</div>
+	<div class="itm itm4">4</div>
+	<div class="itm itm5">5</div>
+	<div class="itm itm6">6</div>
+	<div class="itm itm7">7</div>
+	<div class="itm itm8">8</div>
+	<div class="itm itm9">9</div>
+	<div class="itm itm10">10</div>
+</div>
+<div class="container container--2">
+	<div class="itm itm1">1</div>
+	<div class="itm itm2">2</div>
+	<div class="itm itm3">3</div>
+	<div class="itm itm4">4</div>
+	<div class="itm itm5">5</div>
+	<div class="itm itm6">6</div>
+	<div class="itm itm7">7</div>
+	<div class="itm itm8">8</div>
+	<div class="itm itm9">9</div>
+	<div class="itm itm10">10</div>
+</div>
+<div class="container container--3">
+	<div class="itm itm1">1</div>
+	<div class="itm itm2">2</div>
+	<div class="itm itm3">3</div>
+	<div class="itm itm4">4</div>
+	<div class="itm itm5">5</div>
+	<div class="itm itm6">6</div>
+	<div class="itm itm7">7</div>
+	<div class="itm itm8">8</div>
+	<div class="itm itm9">9</div>
+	<div class="itm itm10">10</div>
+</div>
+<div class="container container--4">
+	<div class="itm itm1">1</div>
+	<div class="itm itm2">2</div>
+	<div class="itm itm3">3</div>
+	<div class="itm itm4">4</div>
+	<div class="itm itm5">5</div>
+	<div class="itm itm6">6</div>
+	<div class="itm itm7">7</div>
+	<div class="itm itm8">8</div>
+	<div class="itm itm9">9</div>
+	<div class="itm itm10">10</div>
+</div>
+<div class="container container--5">
+	<div class="itm itm1">1</div>
+	<div class="itm itm2">2</div>
+	<div class="itm itm3">3</div>
+	<div class="itm itm4">4</div>
+	<div class="itm itm5">5</div>
+	<div class="itm itm6">6</div>
+	<div class="itm itm7">7</div>
+	<div class="itm itm8">8</div>
+	<div class="itm itm9">9</div>
+	<div class="itm itm10">10</div>
+</div>
 
 <style>
-		.container {
-		}
-		.itm {
-		}
-		.itm5 {
-		}
-	</style>
+	/*
+		- Make container grid with 20px gap;
+		- Make container--1 to have five equal columns and two rows of 100px;
+		- Align item in container--1 to center verticaly and horizontaly;
+		- Make container--2 with five equal columns and extra rows set to 100px;
+		- Align content in container--2 to center verticaly and horizontaly;
+		- Make container--3 with five equal columns and extra rows set to 100px;
+		- Make content in container--3 to have equal space around;
+		- Make container--4 with five equal columns and extra rows set to 100px;
+		- Make content in container--3 to have maximum equal space in between;
+		- Make container--5 with five equal columns and extra rows set to 100px;
+		- Make content in container--3 to space evenly;
+		- Align item5 in the top right corner.
+	*/
+	.container {
+		border: 5px solid var(--yellow);
+		margin-bottom: 30px;
+	}
+
+	.itm {
+		background: white;
+		font-size: 24px;
+	}
+
+	.container--1 {
+	}
+
+	.container--2 {
+		height: 500px;
+	}
+
+	.container--3 {
+		height: 500px;
+	}
+
+	.container--4 {
+		height: 500px;
+	}
+
+	.container--5 {
+		height: 500px;
+	}
+
+	.itm5 {
+	}
+</style>
+
 </html>
