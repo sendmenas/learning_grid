@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css.css">
+	<link rel="stylesheet" href="../css.css">
 	<title>CSS Grid</title>
 </head>
 
@@ -34,15 +34,16 @@
 </div>
 
 <style>
+	/*
+		- Make container grid with gap of 20px;
+		- Make three named columns, first and last of 100px and middle one must occupy free space;
+		- Make ten row with automaticaly calculated height. Name the start and end of them;
+		- Put item3 in the middle and make the height of the full grid using named rows and columns.
+	*/
 	.container {
-		display: grid;
-		grid-gap: 20px;
-		grid-template-columns: [site-start] 100px [main-start] 1fr [main-end] 100px [site-end];
-		grid-template-rows: [site-start] repeat(10, auto) [site-end];
 	}
+
 	.item3 {
-		grid-column: main-start;
-		grid-row: site-start / site-end;
 	}
 </style>
 

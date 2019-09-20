@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css.css">
+	<link rel="stylesheet" href="../css.css">
 	<title>CSS Grid</title>
 </head>
 
@@ -35,32 +35,26 @@
 	<div class="item item4">item 4</div>
 </div>
 <style>
-	/*
-		- Make container grid with 20px gap;
-		- Make container 1 to auto fill the grid with 150px columns;
-		- Make container 2 to auto fit the grid with 150px columns;
-		- Make container 3 to auto fill the grid with columns of minimum width of 150px ad maximum to occupy all free space;
-		- Make container 4 to auto fit the grid with columns of minimum width of 150px ad maximum to occupy all free space;
-		- Place item4 in the last column of the grid.
-	*/
 	.container {
-		border: 10px solid var(--yellow);
 		margin-bottom: 30px;
+		display: grid;
+		grid-gap: 20px;
+		border: 10px solid var(--yellow);
 	}
-
 	.container--1 {
+		grid-template-columns: repeat(auto-fill, 150px);
 	}
-
 	.container--2 {
+		grid-template-columns: repeat(auto-fit, 150px);
 	}
-
 	.container--3 {
+		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 	}
-
 	.container--4 {
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 	}
-
 	.item4 {
+		grid-column-end: -1;
 	}
 </style>
 

@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css.css">
+	<link rel="stylesheet" href="../css.css">
 	<title>CSS Grid</title>
 </head>
 
@@ -34,38 +34,15 @@
 </div>
 
 <style>
-	/*
-		- Make container grid with 20px gap, five equal columns, and four rows of 75px;
-		- Make item3 to start in first column;
-		- Make item5 to start in third row;
-		- Make item9 to start in third column go til the grid end;
-		- Make item11 to start in second row and ocupy four rows;
-		- Make item13 to have a width of a grid;
-		- Make item17 to have a height of a grid;
-		- Make item19 to start in first column and finish to columns less than the grid;
-	*/
 	.container {
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: [site-start] 100px [main-start] 1fr [main-end] 100px [site-end];
+		grid-template-rows: [site-start] repeat(10, auto) [site-end];
 	}
-
 	.item3 {
-	}
-
-	.item5 {
-	}
-
-	.item9 {
-	}
-
-	.item11 {
-	}
-
-	.item13 {
-	}
-
-	.item17 {
-	}
-
-	.item19 {
+		grid-column: main-start;
+		grid-row: site-start / site-end;
 	}
 </style>
 
