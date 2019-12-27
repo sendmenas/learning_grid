@@ -37,14 +37,20 @@
 	/*
 		https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns
 		- Make container grid with gap of 20px;
-		- Make three named columns, first and last of 100px and middle one must occupy free space;
-		- Make ten row with automatically calculated height. Name the start and end of them;
+		- Make three columns with line names around them, first and last of 100px and middle one must occupy free space;
+		- Make ten rows with automatically calculated height. Name the start and end of them;
 		- Put item3 in the middle and make the height of the full grid using named rows and columns.
 	*/
 	.container {
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: [content-start] 100px [main-start] 1fr [main-end] 100px [content-end];
+		grid-template-rows: [rows-start] repeat(10, auto) [rows-end];
 	}
 
 	.item3 {
+		grid-column: main-start / main-end;
+		grid-row: rows-start / rows-end;
 	}
 </style>
 
