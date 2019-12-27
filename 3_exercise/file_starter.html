@@ -49,27 +49,38 @@
 		- Make item19 to start in first column and finish to columns less than the grid;
 	*/
 	.container {
+		display: grid;
+		grid-gap: 20px;
+		grid-template-rows: repeat(4, 75px);
+		grid-template-columns: repeat(5, 1fr);
 	}
 
 	.item3 {
+		grid-column: 1;
 	}
 
 	.item5 {
+		grid-row: 3;
 	}
 
 	.item9 {
+		grid-column: 3 / -1;
 	}
 
 	.item11 {
+		grid-row: 2 / span 4;
 	}
 
 	.item13 {
+		grid-column: 1 / -1;
 	}
 
 	.item17 {
+		grid-row: 1 / -1;
 	}
 
 	.item19 {
+		grid-column: 1 / -3;
 	}
 </style>
 
